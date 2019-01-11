@@ -7,6 +7,69 @@
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900|Karla:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
+        
+        <style>
+            .hero { 
+                margin-top:20px;
+                height:600px;
+                display:grid;
+                align-content:center;
+                background:#cac4bd url("images/banner.jpg");
+                background-size:cover;
+                position:relative;
+                font-family:'Fira Sans', sans-serif;
+                font-weight:600;
+                margin-bottom:30px;
+            }
+            /*defines the jagged edge on the bottom */
+            .hero:after {
+                background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+                background-position: left-bottom;
+                background-repeat: repeat-x;
+                background-size: 32px 32px;
+                content: " ";
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                height: 32px;
+            }
+            .hero-text h1 {margin-top:0;}
+            .hero-text .line1 {font-size:5vw;display:block;text-align:center;}
+            .hero-text .line2 {font-size:7vw;display:block;text-align:center;}
+            .hero-text {background-color:rgba(255, 255, 255, .7);padding:4em 0;}
+            
+            .steps {padding-bottom:100px;}
+            .steps h2 {text-align:center;margin-bottom:1em;}
+            .steps-list {
+                display:grid;
+                grid-row-gap:50px;
+                grid-template-columns:repeat(4, 25%);
+                text-align: center;
+            }
+            .steps-list {list-style:none; counter-reset:steps-counter;}
+            .steps-list li { counter-increment:steps-counter; position:relative;}
+            .steps-list li:before { 
+                content: counter(steps-counter); 
+                color:#eaaf25; 
+                font-family: "Fira Sans", sans-serif; 
+                font-weight:800;
+                font-size:7em; 
+                position:absolute; 
+                top:30px;
+                left:0;
+            }
+
+            .steps-list a {text-decoration:none;color:#282b2d;}
+            .steps-list a:hover {text-decoration:underline;}
+            /*.steps-list a:hover img {opacity:.5;}*/
+            .steps-list a:hover img {transform: scale(1.1);}
+            /*.steps-list a:hover img {transform:rotate(45deg);}*/
+            .steps-list p {margin:0 auto;font-weight:600;max-width:160px;}
+            
+            footer {margin-top:0;}
+        </style>
     </head>
     <body>
         
@@ -34,7 +97,7 @@
             </div>
             <div class="hero">
                 <div class="hero-text">
-                    <p><span class="line1">Gardening Tips for</span> <span class="line2">Urban Environments</span></p>
+                    <h1><span class="line1">Gardening Tips for</span> <span class="line2">Urban Environments</span></h1>
                 </div>
             </div>
         </header>
@@ -46,11 +109,11 @@
             </div>
             
             <!--- steps --->
-            <div class="content steps">
+            <section class="content steps">
                 <h2>Steps to Growing an Urban Garden</h2>
                 <ol class="steps-list">
-                    <li><a href=""><img src="images/chooselocation.jpg" alt="" class="circle"><p>Choose a location</p></a></li>
-                    <li><a href=""><img src="images/choosecontainers.jpg" alt="" class="circle"><p>Choose your containers</p></a></li>
+                    <li><a href="location.html"><img src="images/chooselocation.jpg" alt="" class="circle"><p>Choose a location</p></a></li>
+                    <li><a href="containers.html"><img src="images/choosecontainers.jpg" alt="" class="circle"><p>Choose your containers</p></a></li>
                     <li><a href=""><img src="images/chooseplants.jpg" alt="" class="circle"><p>Choose your plants</p></a></li>
                     <li><a href=""><img src="images/createwateringsystem.jpg" alt="" class="circle"><p>Create a watering system</p></a></li>
                     <li><a href=""><img src="images/prepsoil.jpg" alvt="" class="circle"><p>Prep your soil</p></a></li>
@@ -58,10 +121,10 @@
                     <li><a href=""><img src="images/maintaingarden.jpg" alt="" class="circle"><p>Maintain your garden</p></a></li>
                     <li><a href=""><img src="images/harvestplants.jpg" alt="" class="circle"><p>Harvest your plants</p></a></li>
                 </ol>
-            </div>
+            </section>
             
             <!--- benefits --->
-            <div class="content benefits">
+            <section class="content benefits">
                 <div class="benefits-image">
                     <img src="images/urbangardencylindercontainers.jpg" alt="">
                 </div>
@@ -74,7 +137,7 @@
                         <p><strong>Quality of Life</strong> - Urban farming can help strengthen your community, give you a sense of accomplishment, give you exercise, take advantage of unused resources, add more green space and more.</p>
                     </div>
                 </div>
-            </div>
+            </section>
             
             <!--- quote --->
             <div class="content quote2">
@@ -82,7 +145,7 @@
             </div>
             
             <!--- newsletter --->
-            <div class="newsletter">
+            <section class="newsletter">
                 <div class="content">
                     <h2>Join Our Newsletter</h2>
                     <p>Enter your email and get our weekly tips on growing your urban garden as well as local events.</p>
@@ -93,7 +156,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </section>
             
         </main>
         
