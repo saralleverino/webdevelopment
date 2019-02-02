@@ -1,0 +1,27 @@
+<header>
+            <div class="header-top">
+                <div class="grid-item global-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item logo">
+                    <a href="index.html"><img src="images/logo.png" alt="The Urban Garden"></a>
+                </div>
+                <div class="grid-item tactical-nav">
+                    <ul>
+                        <li><a href="tel:801-555-1234"><i class="fi-telephone"></i> 801-555-1234</a></li>
+                        <li><a href="#" title="The Urban Garden on Facebook"><i class="fab fa-facebook-f icon"></i></a></li>
+                        <li><a href="#" title="The Urban Garden on Instagram"><i class="fab fa-instagram icon"></i></a></li>
+                        <li><a href="#" title="The Urban Garden on Snapchat"><i class="fab fa-snapchat icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <p><span class="line1">Gardening Tips for</span> <span class="line2">Urban Environments</span></p>
+                </div>
+            </div>
+        </header>

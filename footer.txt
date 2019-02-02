@@ -1,0 +1,32 @@
+<footer>
+            <div class="footer content">
+                <div class="grid-item logo">
+                    <a href="index.html"><img src="images/logo-stacked.png" alt="The Urban Garden"></a>
+                    <p>We love plants and the mood &amp; health benefits they bring to spaces.</p>
+                    <a href="#" title="The Urban Garden on Facebook"><i class="fab fa-facebook-f icon"></i></a> 
+                    <a href="#" title="The Urban Garden on Instagram"><i class="fab fa-instagram icon"></i></a> 
+                    <a href="#" title="The Urban Garden on Snapchat"><i class="fab fa-snapchat icon"></i></a>
+                </div>
+                <div class="grid-item boot">
+                    <img src="images/bootwithplant.png" alt=""> 
+                </div>
+                <div class="grid-item resources">
+                    <h2>Resources</h2>
+                    <ul class="resources-list">
+                        <li><a href="#">Start a Community Garden</a></li>
+                        <li><a href="#">Local Nurseries</a></li>
+                        <li><a href="#">Gardening Classes</a></li>
+                        <li><a href="#">Urban Gardening Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item contact-us">
+                    <h2>Contact Us</h2>
+                    <address>
+                        1234 Urban Street<br>
+                        Ogden, UT 84408
+                    </address>
+                    <p><a href="tel:801-555-1234">801-555-1234</a></p>
+                    <p><a href="mailto:info@theurbangarden.com">info@theurbangarden.com</a></p>
+                </div>
+            </div>
+        </footer>
